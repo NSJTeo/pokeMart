@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "PokemonGB";
+  src: url("./assets/fonts/PokemonGB.woff2") format("woff2"), url("./assets/fonts/PokemonGB.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "PokemonGB";
+}
+
+.shopping-container {
+  background-color: #d3d3d3;
+  border: 1rem solid black;
+  border-bottom: 0;
+  margin: 6rem auto;
+  max-width: 80rem;
+}
+@media (min-width: 48rem) {
+  .shopping-container {
+    border: 4rem solid black;
+  }
+}
+.shopping-container__logo-container {
+  background-color: black;
+  height: 6rem;
+  padding-top: 1rem;
+}
+@media (min-width: 48rem) {
+  .shopping-container__logo-container {
+    padding-top: 3rem;
+  }
+}
+.shopping-container__logo {
+  display: block;
+  width: 9rem;
+  height: auto;
+  margin: auto;
+}
+
+body {
+  background-color: #551a8b;
+  padding: 2rem;
+}
+@media (min-width: 48rem) {
+  body {
+    padding: 5rem;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.shopping-menu {
+  margin: 0.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 0.5rem double black;
+}
+.shopping-menu__item-pointer {
+  content: "©";
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  color: #d3d3d3;
+  transition: color 0.25s;
+}
+.shopping-menu__item-container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 15rem;
+  transition: color 0.25s;
+}
+.shopping-menu__item-container:hover .shopping-menu__item-pointer {
+  color: black;
+}
+.shopping-menu__add-button {
+  background: none;
+  border: none;
+}
+.shopping-menu__add-button:active .shopping-menu__item-image {
+  transform: scale(1.25);
+}
+.shopping-menu__item-name {
+  font-weight: 600;
+  font-family: "PokemonGB";
+}
+.shopping-menu__item-name--japanese {
+  font-size: 1.5rem;
+}
+.shopping-menu__item-price {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.shopping-menu__item-image {
+  width: 6rem;
+  height: auto;
+}
+.shopping-menu__item-image:hover {
+  cursor: pointer;
+}
+.shopping-menu__item-description {
+  text-align: center;
+  max-width: 13rem;
+  line-height: 1.5rem;
+}
+.shopping-menu__image-container {
+  position: relative;
+  font-size: 2rem;
+}
+
+.shopping-cart {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3d3d3;
+  border: 0.5rem double black;
+}
+.shopping-cart__item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.shopping-cart__title {
+  font-size: 2rem;
+  text-align: center;
+}
+.shopping-cart__item-image {
+  min-width: 5rem;
+  height: auto;
+}
+.shopping-cart__delete-item-button {
+  font-weight: 700;
+  color: red;
+  font-size: 2rem;
+  background: none;
+  border: 0;
+}
+.shopping-cart__delete-item-button:hover {
+  cursor: pointer;
+}
+.shopping-cart__total {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+.shopping-cart__buy-button {
+  display: block;
+  margin: 3rem auto;
+  font-size: 1.5rem;
+  color: #c7a008;
+  background-color: #3c5aa6;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.shopping-cart__buy-button:hover {
+  cursor: pointer;
+}
+.shopping-cart__item-price {
+  display: none;
+}
+.shopping-cart__item-count {
+  margin: 1rem;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=main.css.map */

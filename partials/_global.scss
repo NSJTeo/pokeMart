@@ -1,0 +1,6 @@
+@use './fonts' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "PokemonGB";
+}

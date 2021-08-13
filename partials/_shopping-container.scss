@@ -1,0 +1,27 @@
+@use './queries' as *;
+
+
+.shopping-container {
+  background-color: #d3d3d3;
+  border: 1rem solid black;
+  border-bottom: 0;
+  margin: 6rem auto;
+  max-width: $breakpoint-desktop;
+  @include tablet {
+    border: 4rem solid black;
+  }
+  &__logo-container {
+    background-color: black;
+    height: 6rem;
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 3rem;
+    }
+  }
+  &__logo {
+    display: block;
+    width: 9rem;
+    height: auto;
+    margin: auto;
+  }
+}
