@@ -29,7 +29,10 @@ axios.get('https://pokeapi.co/api/v2/item-category/27/').then(response => {
 
   itemsArray.forEach(item => {
     axios.get(item.url).then(response => {
-      console.log(response.data);
+      console.log(response)
+      if (response.data.name == 'sweet-heart') {
+        return;
+      } 
       let pokeItem = {};
       pokeItem.englishName = response.data.name.toUpperCase().replace('-', ' ');
       pokeItem.japaneseName = response.data.names[0].name;
