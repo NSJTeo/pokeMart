@@ -61,59 +61,6 @@ li {
   justify-content: center;
   border: 0.5rem double black;
 }
-.shopping-menu__item-pointer {
-  content: "©";
-  position: absolute;
-  top: 1.5rem;
-  right: 5rem;
-  color: #d3d3d3;
-  transition: color 0.25s;
-}
-.shopping-menu__item-container {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 15rem;
-  transition: color 0.25s;
-}
-.shopping-menu__item-container:hover .shopping-menu__item-pointer {
-  color: black;
-}
-.shopping-menu__add-button {
-  background: none;
-  border: none;
-}
-.shopping-menu__add-button:active .shopping-menu__item-image {
-  transform: scale(1.25);
-}
-.shopping-menu__item-name {
-  font-weight: 600;
-  font-family: "PokemonGB";
-}
-.shopping-menu__item-name--japanese {
-  font-size: 1.5rem;
-}
-.shopping-menu__item-price {
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-.shopping-menu__item-image {
-  width: 6rem;
-  height: auto;
-}
-.shopping-menu__item-image:hover {
-  cursor: pointer;
-}
-.shopping-menu__item-description {
-  text-align: center;
-  max-width: 13rem;
-  line-height: 1.5rem;
-}
-.shopping-menu__image-container {
-  position: relative;
-  font-size: 2rem;
-}
 
 .shopping-cart {
   margin: 0.5rem;
@@ -170,5 +117,59 @@ li {
 }
 .shopping-cart__item-count {
   margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.shopping-menu-item__container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 15rem;
+  transition: color 0.25s;
+}
+.shopping-menu-item__container:hover .shopping-menu-item__pointer {
+  color: black;
+}
+.shopping-menu-item__add-button {
+  background: none;
+  border: none;
+}
+.shopping-menu-item__add-button:active .shopping-menu-item__image {
+  transform: scale(1.25);
+}
+.shopping-menu-item__image-container {
+  position: relative;
+  font-size: 2rem;
+}
+.shopping-menu-item__pointer {
+  content: "©";
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  color: #d3d3d3;
+  transition: color 0.25s;
+}
+.shopping-menu-item__image {
+  width: 6rem;
+  height: auto;
+}
+.shopping-menu-item__image:hover {
+  cursor: pointer;
+}
+.shopping-menu-item__name {
+  font-weight: 600;
+  font-family: "PokemonGB";
+}
+.shopping-menu-item__name--japanese {
+  font-size: 1.5rem;
+}
+.shopping-menu-item__description {
+  text-align: center;
+  max-width: 13rem;
+  line-height: 1.5rem;
+}
+.shopping-menu-item__price {
+  font-weight: 400;
   font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
